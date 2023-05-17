@@ -18,7 +18,7 @@ const Card = (props) => {
     <>
       <div className="container2">
         <div className="wrapper" id="green">
-          <div className="right" id={props.id}>
+          <div className="right" id={props.id}> 
             <div>
               <img src={props.imageSource} alt={props.imageAlt} />
             </div>

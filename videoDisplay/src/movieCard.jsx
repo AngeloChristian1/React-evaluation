@@ -1,4 +1,6 @@
 import "./All.css";
+import Icon from "./Icon.jsx";
+import Bookmark from "./assets/bookmark-black.svg";
 
 const MovieCard = (props) => {
   return (
@@ -7,7 +9,9 @@ const MovieCard = (props) => {
         style={{ backgroundImage: `url(${props.backImage})` }}
         className={props.movieClass + " default "}
       >
-        <div className="feedLogo"></div>
+        <div className="feedLogo">
+          <Icon IconClass="sideIcon" IconPic={Bookmark} />
+        </div>
       </div>
       <div className={" cardContent " + props.cardContentClass}>
         <div className="movieDetails">

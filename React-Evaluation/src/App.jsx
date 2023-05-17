@@ -20,7 +20,7 @@ function App() {
       </div>
 
       <Card
-        imageSource={Image4}
+        imageSource={Image4} 
         imageAlt="image"
         h3="Photos"
         new="NEW"

@@ -5,67 +5,27 @@ import MovieCard from "./movieCard";
 import Avenger from "./assets/Avengers.jpg";
 import Captain from "./assets/Captain.jpg";
 import Tree from "./assets/Tree.jpg";
+import MainLayout from "./MainLayout";
 
 function App() {
   return (
     <>
-      <div className="container">
-        <div className="nav">
-          <Sidebar />
-        </div>
-        <div className="mainContent">
-          <div>
-            <SearchBar placeholder="Search for movies and TV series" />
-          </div>
-          <div className="div">
+      <MainLayout>
+        <div className="container">
+          <div className="mainContent">
             <div>
-              <h3 className="whiteTitle">Trending</h3>
+              <SearchBar placeholder="Search for movies and TV series" />
             </div>
-            <div className="upperContent">
+            <div className="div">
               <div>
-                <MovieCard
-                  backImage={Avenger}
-                  movieClass=""
-                  cardContentClass="moveUp"
-                  year="2019"
-                  category="Movie"
-                  pg="PG"
-                  movieName="Beyong Earth"
-                />
+                <h3 className="whiteTitle">Trending</h3>
               </div>
-              <div>
-                <MovieCard
-                  backImage={Captain}
-                  movieClass=""
-                  cardContentClass="moveUp"
-                  year="2019"
-                  category="Movie"
-                  pg="PG"
-                  movieName="Beyong Earth"
-                />
-              </div>
-              <div>
-                <MovieCard
-                  backImage={Avenger}
-                  movieClass=""
-                  cardContentClass="moveUp"
-                  year="2019"
-                  category="Movie"
-                  pg="PG"
-                  movieName="Beyong Earth"
-                />
-              </div>
-            </div>
-            <div className="div2">
-              <div>
-                <h3 className="whiteTitle">Recommended for you</h3>
-              </div>
-              <div className="lowerContent">
+              <div className="upperContent">
                 <div>
                   <MovieCard
-                    backImage={Tree}
-                    movieClass="small"
-                    cardContentClass=""
+                    backImage={Avenger}
+                    movieClass=""
+                    cardContentClass="moveUp"
                     year="2019"
                     category="Movie"
                     pg="PG"
@@ -75,8 +35,8 @@ function App() {
                 <div>
                   <MovieCard
                     backImage={Captain}
-                    movieClass="small"
-                    cardContentClass=""
+                    movieClass=""
+                    cardContentClass="moveUp"
                     year="2019"
                     category="Movie"
                     pg="PG"
@@ -86,19 +46,8 @@ function App() {
                 <div>
                   <MovieCard
                     backImage={Avenger}
-                    movieClass="small"
-                    cardContentClass=""
-                    year="2019"
-                    category="Movie"
-                    pg="PG"
-                    movieName="Beyong Earth"
-                  />
-                </div>
-                <div>
-                  <MovieCard
-                    backImage={Tree}
-                    movieClass="small"
-                    cardContentClass=""
+                    movieClass=""
+                    cardContentClass="moveUp"
                     year="2019"
                     category="Movie"
                     pg="PG"
@@ -106,10 +55,181 @@ function App() {
                   />
                 </div>
               </div>
+              <div className="div2">
+                <div>
+                  <h3 className="whiteTitle">Recommended for you</h3>
+                </div>
+                <div className="lowerContent">
+                  <div>
+                    <MovieCard
+                      backImage={Tree}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Captain}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Avenger}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Tree}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                </div>
+                <div className="lowerContent">
+                  <div>
+                    <MovieCard
+                      backImage={Tree}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Captain}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Avenger}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Tree}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="div3">
+                <div>
+                  <h3 className="whiteTitle">Comedy</h3>
+                </div>
+                <div className="lowerContent">
+                  <div>
+                    <MovieCard
+                      backImage={Tree}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Captain}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Avenger}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Tree}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+
+                  <div>
+                    <MovieCard
+                      backImage={Tree}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                  <div>
+                    <MovieCard
+                      backImage={Captain}
+                      movieClass="small"
+                      cardContentClass=""
+                      year="2019"
+                      category="Movie"
+                      pg="PG"
+                      movieName="Beyong Earth"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </MainLayout>
     </>
   );
 }

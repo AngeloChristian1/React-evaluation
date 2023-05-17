@@ -9,20 +9,21 @@ body {
   padding: 20px;
   box-sizing: border-box;
   color: rgb(205, 202, 202);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 .sideIcon {
   width: 40px;
   height: 40px;
-  margin: 10px;
-  background: white;
+  margin: 20px 10px;
+  /* background: white; */
 }
 .sideContainer {
   width: 70px;
   height: 90vh;
   background: rgba(4, 4, 58, 0.9);
   border-radius: 10px;
-  position: relative;
+  position: fixed;
   padding: 10px 0px;
   align-content: center;
   justify-content: center;
@@ -30,21 +31,46 @@ body {
 }
 .sideContent {
   /* transform: translateY(30%); */
+  margin-top: 110%;
+  margin-left: 5px;
 }
 
 .profile {
+  width: 50px;
+  height: 50px;
+  margin: 20px 10px;
   position: absolute;
   border-radius: 50%;
-  bottom: 10%;
+  bottom: 3%;
+  right: 2%;
+  filter: contrast(1);
+  background: white;
+  justify-content: center;
+  align-content: center;
+}
+.profile img {
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  margin: 1.9px;
 }
 
 .feedLogo {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.5);
   float: right;
   margin: 15px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.feedLogo img {
+  filter: contrast(0);
+  width: 20px;
+  height: 20px;
+  transform: translate(-10%, -60%);
 }
 .container {
   display: flex;
@@ -54,19 +80,35 @@ body {
 }
 .search-bar {
   width: 70vw;
-  /* background-color: red; */
-  /* height: 100px; */
   display: flex;
-
   border: 1px solid white;
   border-radius: 40px;
   padding: 2px 10px;
 }
-.searchIcon {
-  width: 20px;
-  height: 20px;
-  transform: translate(40%, 40%);
+.sideContent .sideIcon img {
   filter: contrast(0);
+  width: 30px;
+  height: 30px;
+}
+
+.Icon {
+  transform: translate(40%, 40%);
+}
+.red {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+.red img {
+  width: 40px;
+  height: 30px;
+  transform: translate(60%, 20%);
+}
+.grid img {
+  width: 30px;
+  height: 30px;
+  transform: translate(40%, 40%);
+  margin: ;
 }
 
 input[type="search"] {
@@ -89,13 +131,20 @@ input[type="search"] {
   border-radius: 10px;
 }
 .upperContent {
-  width: 70vw;
+  width: 90vw;
   display: flex;
   gap: 25px;
+  /* background: red; */
+  flex-wrap: wrap;
 }
 .whiteTitle {
-  margin: 10px 5px;
+  margin: 20px 5px;
   font-size: 1.2em;
+  color: white;
+  /* background: brown; */
+  max-width: 300px;
+  height: 30px;
+  font-size: 1.5em;
 }
 .cardContent {
   gap: 10px;
@@ -111,15 +160,46 @@ input[type="search"] {
   margin-bottom: 7px;
 }
 .lowerContent {
-  width: 70vw;
+  width: 90vw;
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
+  /* background: red; */
 }
 .small {
   width: 21vw;
   height: 30vh;
+  margin-top: 30px;
 }
 .moveUp {
   transform: translate(5%, -150%);
   /* background: red; */
+}
+.mainContent {
+  margin-left: 70px;
+}
+.singleContainer {
+  background: white;
+}
+.whiteText {
+  width: 100%;
+  font-size: 1.2em;
+  margin: 15px 5px;
+}
+.container {
+  margin-left: 15px;
+}
+
+.filterList {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0px;
+}
+
+.filter {
+  background: rgba(205, 202, 202, 0.7);
+  padding: 5px 10px;
+  border-radius: 40px;
+  color: white;
+  text-align: center;
 }
