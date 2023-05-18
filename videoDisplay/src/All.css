@@ -130,6 +130,14 @@ input[type="search"] {
   background-position: center center;
   border-radius: 10px;
 }
+
+.movieCard:hover {
+  transform: scale(1);
+}
+.movieCard {
+  transform: scale(0.985);
+  transition: 0.4s;
+}
 .upperContent {
   width: 90vw;
   display: flex;
@@ -202,4 +210,46 @@ input[type="search"] {
   border-radius: 40px;
   color: white;
   text-align: center;
+}
+.bigCard {
+  width: 70vw;
+  height: 65vh;
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  margin: 30px 15% 10px 15%;
+}
+.hide {
+  display: none;
+}
+.moveLeft {
+  transform: translate(20%, 40%);
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  gap: 80px;
+}
+
+.description {
+  width: 50vw;
+  margin: 20px 30px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.cast,
+.director {
+  display: flex;
+  gap: 5px;
+}
+.video {
+  margin: 10px 30px;
+  box-shadow: 1px 5px 6px solid white;
+}
+.video video {
+  border-radius: 10px;
+}
+.movieHeading {
+  display: flex;
+  gap: 10px;
 }
